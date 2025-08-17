@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarakhi K - Portfolio</title>
+  <style>
+    /* ----------- Base Styles ----------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f9fafc;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* ----------- Header ----------- */
+    header {
+      background: linear-gradient(135deg, #1d2671, #c33764);
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* ----------- Navigation ----------- */
+    nav {
+      background: #222;
+      padding: 0.8rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc70;
+    }
+
+    /* ----------- Section ----------- */
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+      animation: fadeInUp 1s ease;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #c33764;
+      display: block;
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+
+    /* ----------- Cards (Skills/Projects) ----------- */
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      margin-bottom: 0.8rem;
+      color: #c33764;
+    }
+
+    /* ----------- Contact Section ----------- */
+    .contact p, .contact a {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    .contact a {
+      color: #1d2671;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .contact a:hover {
+      color: #c33764;
+    }
+
+    /* ----------- Footer ----------- */
+    footer {
+      background: #1d2671;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* ----------- Animations ----------- */
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sarakhi K</h1>
+  <p>Full Stack Developer (MERN)</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    Applied MERN stack development skills (MongoDB, Express.js, React.js, Node.js) to build internal tools and dashboards, 
+    enabling data automation, task optimization, and improved reporting accuracy. 
+    Passionate about creating scalable web apps with great user experiences.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="card">
+      <h3>Frontend</h3>
+      <p>React.js, Redux, HTML, CSS, JavaScript, Tailwind, Bootstrap, Material UI</p>
+    </div>
+    <div class="card">
+      <h3>Backend</h3>
+      <p>Node.js, Express.js, MySQL, MongoDB</p>
+    </div>
+    <div class="card">
+      <h3>Tools</h3>
+      <p>Git, GitHub, Netlify, Vercel, VS Code, Postman</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Real-estate</h3>
+      <p>Full stack MERN real estate app for browsing, buying, and selling properties.</p>
+      <a href="https://realestate-99.netlify.app/" target="_blank">🔗 View Project</a>
+    </div>
+    <div class="card">
+      <h3>Doctor Appointment</h3>
+      <p>MERN app for booking doctor appointments, streamlining patient-provider experience.</p>
+      <a href="https://mhc-frontend.netlify.app/" target="_blank">🔗 View Project</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:sarakhiammu96@gmail.com">sarakhiammu96@gmail.com</a></p>
+  <p>Phone: 7550399079</p>
+  <p>Location: Puducherry</p>
+  <p>LinkedIn: <a href="www.linkedin.com/in/sarakhi-kuppusamy">LinkedIn Profile</a></p>
+  <p>GitHub: <a href="https://github.com/sarakhi20">GitHub Profile</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Sarakhi K - Portfolio</p>
+</footer>
+
+<script>
+  // Smooth fade-in animation on scroll
+  const sections = document.querySelectorAll("section");
+  const options = { threshold: 0.2 };
+  const observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.style.animation = "fadeInUp 1s ease forwards";
+      }
+    });
+  }, options);
+
+  sections.forEach(sec => {
+    sec.style.opacity = "0";
+    observer.observe(sec);
+  });
+</script>
+
+</body>
+</html>
